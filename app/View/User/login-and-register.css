@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-secondary: hsl(252, 100%,90%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-light: hsl(242, 30%, 95%);
+    --color-white: hsl(252, 30%, 100%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+    --search-padding: 0.6rem 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', 'sans-serif';
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.login {
+    width: 400px;
+
+}
+
+.register {
+    width: 400px;
+
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+    margin-bottom: 20px;
+
+}
+
+.create {
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+
+}
+
+hr {
+    border-top: 2px solid var(--color-secondary);;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+
+}
+
+.right img {
+    width: 450px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button[type="submit"]{
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+button[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right:20px;
+
+    }
+
+    form {
+        width: 300px;
+        margin: 20px auto;
+
+    }
+
+    .login {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .register {
+        width: 400px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+    }
+}

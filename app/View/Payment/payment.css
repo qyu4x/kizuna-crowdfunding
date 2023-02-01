@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-success: hsl(120, 95%, 65%);
+    --color-secondary: hsl(252, 100%,90%);
+    --color-primary: hsl(252, 75%, 60%);
+    --color-gray: hsl(252, 15%, 65%);
+    --color-light: hsl(242, 30%, 95%);
+    --color-white: hsl(252, 30%, 100%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+    --search-padding: 0.6rem 1rem;
+
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+}
+
+
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--color-light);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius: var(--border-radius);
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+}
+
+.inner-container {
+    border-radius: var(--border-radius);
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+}
+.left{
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+.right{
+    flex-basis: 50%;
+}
+form{
+    padding: 1rem;
+}
+
+h3{
+    margin-top: 1rem;
+    color:#2c3e50;
+}
+
+form input[type="text"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+
+#zip{
+    display: flex;
+    margin-top: 0.5rem;
+}
+#zip select{
+    padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px;
+}
+button[type="submit"]{
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+button[type="submit"]:hover{
+    opacity: 0.8;
+}
+
+
+
+@media only screen and (max-width: 770px){
+    .container{
+        flex-direction: column;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
